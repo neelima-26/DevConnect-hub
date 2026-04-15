@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
         <div className="Home">
-        <h1>Wlcome To DevConnect</h1>
+        <h1>Welcome To DevConnect</h1>
         <p>Connect with Developers and build projects Together</p>
             <button>Explore Developers</button>
             <br></br>
