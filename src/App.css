@@ -17,44 +17,94 @@
   gap: 20px;
 
 }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Page */
+body {
+  background: #f5f7fb;
+}
+
+/* Home Section */
 .Home {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   /* vertical center */
-  align-items: center;       /* horizontal center */
   text-align: center;
-  gap: 15px;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
 }
 
-/* Heading */
 .Home h1 {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 
-/* Paragraph */
 .Home p {
   font-size: 18px;
-  color: gray;
-  max-width: 500px;
+  margin-bottom: 25px;
 }
 
 /* Buttons */
-.Home button {
+button {
   padding: 10px 20px;
-  font-size: 16px;
+  margin: 10px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: black;
+  background: #222;
   color: white;
-  margin-top: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Hover effect */
-.Home button:hover {
-  background-color: #333;
+button:hover {
+  background: #555;
+}
+
+/* Explore Section */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.cards div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Projects Section */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Headings spacing */
+h1 {
+  text-align: center;
+  margin-top: 40px;
 }
 /* Page styling */
 h1 {
